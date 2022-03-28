@@ -1,7 +1,7 @@
 class script(object):
     START_TXT = """<b>Hello {},
 I'm A Telegram 𝗌𝗂𝗆𝗉𝗅𝖾 𝗉𝗋𝖾 𝖿𝗎𝗇𝖼𝗍𝗂𝗈𝗇𝖾𝖽 AutoFilter Bot.Its Easy To Use Me ):\nJust Add Me To Your Group As Admin,Hit The /𝖢𝖼elpFor More Info</b>"""
-   HELP_TXT = """<b>𝖧𝖾𝗒 {} 𝖧𝖾𝗋𝖾 𝗂𝗌 𝗍𝗁𝖾 𝖴𝗌𝗎𝖺𝗅 𝖼𝗈𝗆𝗆𝖺𝗇𝖽𝗌:
+    HELP_TXT = """<b>𝖧𝖾𝗒 {} 𝖧𝖾𝗋𝖾 𝗂𝗌 𝗍𝗁𝖾 𝖴𝗌𝗎𝖺𝗅 𝖼𝗈𝗆𝗆𝖺𝗇𝖽𝗌:
 /start - 𝖼𝗁𝖾𝖼𝗄 𝗐𝗁𝖾𝗍𝗁𝖾𝗋 𝗂𝗆 𝗈𝗇𝗅𝗂𝗇𝖾 
 /help - 𝗀𝖾𝗍 𝗍𝗁𝗂𝗌 𝗁𝖾𝗅𝗉 𝗆𝖾𝗌𝗌𝖺𝗀𝖾
 /about - 𝖺𝖻𝗈𝗎𝗍 𝗆𝖾</b>"""
