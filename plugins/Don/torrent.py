@@ -22,17 +22,17 @@ async def torrent(_, message):
     except:
         pass
     if len(message.command) < 2:
-        await message.reply_text("`/torrent <Movie Name>`")
+        await message.reply_text("/torrent 𝖤𝗇𝗍𝖾𝗋 𝖳𝗁𝖾 𝖭𝖺𝗆𝖾 𝖮𝖿 𝖳𝗁𝖾 𝖬𝗈𝗏𝗂𝖾")
         return
     query = message.text.split(None, 1)[1].replace(" ", "%20")
-    m = await message.reply_text("Searching\nThis might take a while")
+    m = await message.reply_text("Searching...\nThis might take a while")
     try:
         async with aiohttp.ClientSession() as session:
             async with session.get(f"https://itor.api-zero.workers.dev/?name={query}") \
                     as resp:
                 a = json.loads(await resp.text())
     except:
-        await m.edit("Found Nothing.")
+        await m.edit("Found Nothing 𝖥𝗈𝗋 𝖸𝗈𝗎𝗋 {query}.")
         return
     result = (
         f"**Page - {i+1}**\n\n"
