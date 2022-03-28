@@ -1389,14 +1389,15 @@ async def auto_filter(client, msg, spoll=False):
             await asyncio.sleep(300)
             await hmm.delete()
             await message.delete()
-        logger.exception(e)
+        except Exception as e:
+            logger.exception(e)
             fek = await message.reply_photo(photo="https://telegra.ph/file/c5f1489cc706063baf6d4.jpg", caption=cap, reply_to_message_id=reply_id, reply_markup=InlineKeyboardMarkup(btn))
             await asyncio.sleep(300)
             await fek.delete()
             await msg.delete()
     else:
         fuk = await message.reply_photo(photo="https://telegra.ph/file/14af383f7c4aa2915c8c5.jpg", caption=cap, reply_to_message_id=reply_id, reply_markup=InlineKeyboardMarkup(btn))
-        await asyncio.sleep(300)
+        await asyncio.sleep(36000)
         await fuk.delete()
         await msg.delete()
     if spoll:
