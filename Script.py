@@ -1,6 +1,6 @@
 class script(object):
     START_TXT = """<b>Hello {},
-I'm A Telegram 𝗌𝗂𝗆𝗉𝗅𝖾 𝗉𝗋𝖾 𝖿𝗎𝗇𝖼𝗍𝗂𝗈𝗇𝖾𝖽 AutoFilter Bot.Its Easy To Use Me ):\nJust Add Me To Your Group As Admin,Hit The /𝖢𝖼elpFor More Info</b>"""
+I'm A Telegram 𝗌𝗂𝗆𝗉𝗅𝖾 𝗉𝗋𝖾 𝖿𝗎𝗇𝖼𝗍𝗂𝗈𝗇𝖾𝖽 AutoFilter Bot.Its Easy To Use Me ):\nJust Add Me To Your Group As Admin,Hit The /help For More Info</b>"""
     HELP_TXT = """<b>𝖧𝖾𝗒 {} 𝖧𝖾𝗋𝖾 𝗂𝗌 𝗍𝗁𝖾 𝖴𝗌𝗎𝖺𝗅 𝖼𝗈𝗆𝗆𝖺𝗇𝖽𝗌:
 /start - 𝖼𝗁𝖾𝖼𝗄 𝗐𝗁𝖾𝗍𝗁𝖾𝗋 𝗂𝗆 𝗈𝗇𝗅𝗂𝗇𝖾 
 /help - 𝗀𝖾𝗍 𝗍𝗁𝗂𝗌 𝗁𝖾𝗅𝗉 𝗆𝖾𝗌𝗌𝖺𝗀𝖾
@@ -16,57 +16,20 @@ I'm A Telegram 𝗌𝗂𝗆𝗉𝗅𝖾 𝗉𝗋𝖾 𝖿𝗎𝗇𝖼𝗍𝗂�
 <b>➥ Build Stats</b> : <code>V6.0 [BETA]</code>
 
 ©️ MᴀɪɴᴛᴀɪɴᴇD Bʏ  <a href=https://t.me/MovieClubOfficiall>Mᴏᴠɪᴇ Cʟᴜʙ</a>"""
-    SOURCE_TXT  = """<b>𝐃𝐨𝐧𝐚𝐭𝐢𝐨𝐧 & 𝐏𝐚𝐢𝐝 𝐏𝐫𝐨𝐦𝐨𝐭𝐢𝐨𝐧</b> 
-
-›› <b>𝐃𝐨𝐧𝐚𝐭𝐢𝐨𝐧</b>
-
-⪼ <b>𝐘𝐨𝐮 𝐂𝐚𝐧 𝐃𝐨𝐧𝐚𝐭𝐞 𝐀𝐧𝐲 𝐀𝐦𝐨𝐮𝐧𝐭 𝐘𝐨𝐮 𝐇𝐚𝐯𝐞 💳. 
-<b>━━━━━━━━━᚜ Payment Methods ᚛━━━━━━━━━
-✮ 𝗚𝗼𝗼𝗴𝗹𝗲𝗣𝗮𝘆
-✮ 𝗣𝗮𝘆𝘁𝗺
-✮ 𝗣𝗵𝗼𝗻𝗲𝗣𝗲
-✮ 𝗣𝗮𝘆𝗣𝗮𝗹
-_𝐂𝐨𝐧𝐭𝐚𝐜𝐭 𝐌𝐞 𝐅𝐨𝐫 𝐊𝐧𝐨𝐰 𝐀𝐛𝐨𝐮𝐭 𝐓𝐡𝐞 𝐏𝐚𝐲𝐦𝐞𝐧𝐭 𝐈𝐧𝐟𝐨_
-━━━━━━━━━━━━᚜ <a href=https://t.me/Aadhi011><b>ꪖꪖᦔꫝỉ</b></a> ᚛━━━━━━━━━━━━
-
-›› <b>𝐏𝐚𝐢𝐝 𝐏𝐫𝐨𝐦𝐨𝐭𝐢𝐨𝐧</b>
-
-⪼ <b>𝐂𝐨𝐧𝐭𝐚𝐜𝐭 𝐌𝐞 𝐖𝐢𝐭𝐡 𝐘𝐨𝐮 𝐂𝐨𝐧𝐭𝐞𝐧𝐭 𝐖𝐡𝐢𝐜𝐡 𝐘𝐨𝐮 𝐖𝐚𝐧𝐭 𝐓𝐨 𝐏𝐫𝐨𝐦𝐨𝐭𝐞 . 
-<b>━━━━━━━━━᚜ Payment Methods ᚛━━━━━━━━━
-✮ 𝗚𝗼𝗼𝗴𝗹𝗲𝗣𝗮𝘆
-✮ 𝗣𝗮𝘆𝘁𝗺
-✮ 𝗣𝗵𝗼𝗻𝗲𝗣𝗲
-✮ 𝗣𝗮𝘆𝗣𝗮𝗹
-_𝐂𝐨𝐧𝐭𝐚𝐜𝐭 𝐌𝐞 𝐖𝐢𝐭𝐡 𝐘𝐨𝐮𝐫 𝐂𝐨𝐧𝐭𝐞𝐧𝐭 𝐀𝐧𝐝 𝐊𝐧𝐨𝐰 𝐀𝐛𝐨𝐮𝐭 𝐓𝐡𝐞 𝐏𝐚𝐲𝐦𝐞𝐧𝐭 𝐈𝐧𝐟𝐨_
-━━━━━━━━━━━━᚜ <a href=https://t.me/Aadhi011><b>ꪖꪖᦔꫝỉ</b></a> ᚛━━━━━━━━━━━━"""
-    PROMOTION_TXT = """<b>〄 𝐏𝐚𝐢𝐝 𝐏𝐫𝐨𝐦𝐨𝐭𝐢𝐨𝐧 〄</b>
-
-⪼ <b>𝐂𝐨𝐧𝐭𝐚𝐜𝐭 𝐌𝐞 𝐖𝐢𝐭𝐡 𝐘𝐨𝐮 𝐂𝐨𝐧𝐭𝐞𝐧𝐭 𝐖𝐡𝐢𝐜𝐡 𝐘𝐨𝐮 𝐖𝐚𝐧𝐭 𝐓𝐨 𝐏𝐫𝐨𝐦𝐨𝐭𝐞 . 
-<b>━━━━━━━━━᚜ Payment Methods ᚛━━━━━━━━━
-✮ 𝗚𝗼𝗼𝗴𝗹𝗲𝗣𝗮𝘆
-✮ 𝗣𝗮𝘆𝘁𝗺
-✮ 𝗣𝗵𝗼𝗻𝗲𝗣𝗲
-✮ 𝗣𝗮𝘆𝗣𝗮𝗹
-_𝐂𝐨𝐧𝐭𝐚𝐜𝐭 𝐌𝐞 𝐖𝐢𝐭𝐡 𝐘𝐨𝐮𝐫 𝐂𝐨𝐧𝐭𝐞𝐧𝐭 𝐀𝐧𝐝 𝐊𝐧𝐨𝐰 𝐀𝐛𝐨𝐮𝐭 𝐓𝐡𝐞 𝐏𝐚𝐲𝐦𝐞𝐧𝐭 𝐈𝐧𝐟𝐨_
-━━━━━━━━━━━━᚜ <a href=https://t.me/Aadhi011><b>ꪖꪖᦔꫝỉ</b></a> ᚛━━━━━━━━━━━━""" 
-    FILE_TXT = """➤ 𝐇𝐞𝐥𝐩: 𝐅𝐢𝐥𝐞 𝐒𝐭𝐨𝐫𝐞 𝐌𝐨𝐝𝐮𝐥𝐞../
-
-<b>𝙱𝚈 𝚄𝚂𝙸𝙽𝙶 𝚃𝙷𝙸𝚂 𝙼𝙾𝙳𝚄𝙻𝙴 𝚈𝙾𝚄 𝙲𝙰𝙽 𝚂𝚃𝙾𝚁𝙴 𝙵𝙸𝙻𝙴𝚂 𝙸𝙽 𝙼𝚈 𝙳𝙰𝚃𝙰𝙱𝙰𝚂𝙴 𝙰𝙽𝙳 𝙸 𝚆𝙸𝙻𝙻 𝙶𝙸𝚅𝙴 𝚈𝙾𝚄 𝙰 𝙿𝙴𝚁𝙼𝙰𝙽𝙴𝙽𝚃 𝙻𝙸𝙽𝙺  𝚃𝙾 𝙰𝙲𝙲𝙴𝚂𝚂 𝚃𝙷𝙴 𝚂𝙰𝚅𝙴𝙳 𝙵𝙸𝙻𝙴𝚂.𝙸𝙵 𝚈𝙾𝚄 𝚆𝙰𝙽𝚃 𝚃𝙾 𝙰𝙳𝙳 𝙵𝙸𝙻𝙴𝚂 𝙵𝚁𝙾𝙼 𝙰 𝙿𝚄𝙱𝙻𝙸𝙲 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 𝚂𝙴𝙽𝙳 𝚃𝙷𝙴 𝙵𝙸𝙻𝚆 𝙻𝙸𝙽𝙺 𝙾𝙽𝙻𝚈  𝙾𝚁 𝚈𝙾𝚄 𝚆𝙰𝙽𝚃 𝚃𝙾 𝙰𝙳𝙳 𝙵𝙸𝙻𝙴𝚂 𝙵𝚁𝙾𝙼 𝙰  𝙿𝚁𝙸𝚅𝙰𝚃𝙴 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 𝚈𝙾𝚄 𝙼𝚄𝚂𝚃 𝙼𝙰𝙺𝙴 𝙼𝙴 𝙰𝙳𝙼𝙸𝙽 𝙾𝙽 𝚃𝙷𝙴 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 𝚃𝙾 𝙰𝙲𝙲𝙴𝚂𝚂 𝙵𝙸𝙻𝙴𝚂...//</b>
-
-⪼ 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬 𝐚𝐧𝐝 𝐔𝐬𝐚𝐠𝐞 ›
-
-➪ /plink ›› <b>𝚁𝙴𝙿𝙻𝚈 𝚃𝙾 𝙰𝙽𝚈 𝙼𝙴𝙳𝙸𝙰 𝚃𝙾 𝙶𝙴𝚃 𝙻𝙸𝙽𝙺.</b>
-➪ /pbatch ›› <b>𝚄𝚂𝙴 𝚈𝙾𝚄𝚁 𝙼𝙴𝙳𝙸𝙰 𝙻𝙸𝙽𝙺 𝚆𝙸𝚃𝙷 𝚃𝙷𝙸𝚂 𝙲𝙾𝙼𝙼𝙰𝙽𝙳.</b>
-➪ /batch ›› <b>𝚃𝙾 𝙲𝚁𝙴𝙰𝚃𝙴 𝙻𝙸𝙽𝙺 𝙵𝙾𝚁 𝙼𝚄𝙻𝚃𝙸𝙿𝙻𝙴 𝙵𝙸𝙻𝙴𝚂.</b>
-
-⪼ 𝐄𝐱𝐚𝐦𝐩𝐥𝐞 ›
-
-<code>/batch https://t.me/MWUpdatez/3 https://t.me/MWUpdatez/8</code>
-
-𝙲𝚁𝙴𝙳𝙸𝚃𝚂 ›› <a href=https://t.me/MWUpdatez><b>𝙼𝚆-𝚄𝙿𝙳𝙰𝚃𝙴𝚉</b></a>"""
-    WHOIS_TXT ="""<b>WHOIS MODULE</b>
-Note:- Give a user details
-•/whois :-give a user full details"""
+   SOURCE_TXT = """
+<code>All the files in this bot are freely available on the internet or posted by somebody else.This bot is indexing files which are already uploaded on Telegram for easy of searching, We respect all the copyright laws and works in compliance with DMCA and EUCD. If anything is against law please contact us so that it can be removed asap.</code>"""
+    FILE_TXT = """Help: <b><u>File Store</u></b>
+<b>By Using This Module You can store files in My database and I will You A Permanent link To access The saved Files.If You want to add files from a Public channel send the file link only or You want to store files from a Private channel you must make me admin on their to access files files (only media messages  can be stored).
+⪼ 𝖢𝗈𝗆𝗆𝖺𝗇𝖽𝗌 𝖠𝗇𝖽 𝖴𝗌𝖺𝗀𝖾</b>
+• /plink - <b>𝖱𝖾𝗉𝗅𝗒 𝗍𝗈 𝖺𝗇𝗒 𝗆𝖾𝖽𝗂𝖺 𝗍𝗈 𝗀𝖾𝗍 𝗅𝗂𝗇𝗄.</b>
+• /pbatch - <b>𝖴𝗌𝖾 𝗒𝗈𝗎𝗋 𝗆e𝖽𝗂𝖺 𝗅𝗂𝗇𝗄 𝗐𝗂𝗍𝗁 𝗍𝗁𝗂𝗌 𝖼𝗈𝗆𝗆𝖺𝗇𝖽.</b>
+• /batch - <b>To Create Link For Multiple Post.</b>
+❗️𝖤𝗑𝖺𝗆𝗉𝗅𝖾:
+<code>/batch https://t.me/MovieClubOfficiall/7 https://t.me/MovieClubOfficiall/10</code>"""
+    WHOIS_TXT ="""Help: <b><u>WHO IS</u></b>
+<b>By Using This Module You Can Get A User Details
+⪼ 𝖢𝗈𝗆𝗆𝖺𝗇𝖽𝗌 𝖠𝗇𝖽 𝖴𝗌𝖺𝗀𝖾</b>
+•/whois : Get a users full details"""
     FUN_TXT ="""<b>Gᴀᴍᴇs</b> 
     
 <b>⚡ 𝙹𝚄𝚂𝚃 𝚂𝙾𝙼𝙴 𝙺𝙸𝙽𝙳 𝙾𝙵 𝙵𝚄𝙽 𝚃𝙷𝙸𝙽𝙶'𝚂 ⚡</b>
@@ -76,70 +39,42 @@ Note:- Give a user details
 3. /Runs - 𝚂𝙾𝙼𝙴 𝚁𝙰𝙽𝙳𝙾𝙼 𝙳𝙸𝙰𝙻𝙾𝙶𝚄𝙴𝚂 
 4. /Goal or /Shoot - 𝚃𝙾 𝙼𝙰𝙺𝙴 𝙰 𝙶𝙾𝙰𝙻 𝙾𝚁 𝚂𝙷𝙾𝙾𝚃
 5. /luck or /cownd - 𝚂𝙿𝙸𝙽 𝙰𝙽𝙳 𝚃𝚁𝚈 𝚈𝙾𝚄𝚁 𝙻𝚄𝙲𝙺"""
-    DEPLOY_TXT = """<b>𝙷𝙾𝚆 𝚃𝙾 𝙳𝙴𝙿𝙻𝙾𝚈..?</b> 
-  
-<b>✮ Deploy Tutorial ››</b> <i><b>https://youtu.be/kB9TkCs8cX0</b></i>
-
-<b>𝚂𝙷𝙰𝚁𝙴 𝙰𝙽𝙳 𝚂𝚄𝙱𝚂𝙲𝚁𝙸𝙱𝙴</b>
-
-𝙲𝚁𝙴𝙳𝙸𝚃𝚂 ›› <a href=https://t.me/MWUpdatez><b>𝙼𝚆-𝚄𝙿𝙳𝙰𝚃𝙴𝚉</b></a>"""
-    MANUELFILTER_TXT = """Help: <b>Filters</b>
-
-- Filter is the feature were users can set automated replies for a particular keyword and ᗩᒍᗩ᙭  will respond whenever a keyword is found the message
-
+    MANUELFILTER_TXT = """Help: <b><u>Manual Filters</u></b>
+<b>Filter is the feature were users can set automated replies for a particular keyword and 𝖭𝖺𝗍𝗁𝖺𝗅𝗂𝖺  will respond whenever a keyword is found the message</b>
 <b>NOTE:</b>
-1. ᗩᒍᗩ᙭ should have admin privillage.
+1. 𝖭𝖺𝗍𝗁𝖺𝗅𝗂𝖺 should have admin privillage.
 2. only admins can add filters in a chat.
 3. alert buttons have a limit of 64 characters.
-
-<b>Commands and Usage:</b>
+<b>⪼ 𝖢𝗈𝗆𝗆𝖺𝗇𝖽𝗌 𝖠𝗇𝖽 𝖴𝗌𝖺𝗀𝖾</b>
 • /filter - <code>add a filter in chat</code>
 • /filters - <code>list all the filters of a chat</code>
 • /del - <code>delete a specific filter in chat</code>
 • /delall - <code>delete the whole filters in a chat (chat owner only)</code>"""
-    SONG_TXT = """<b>𝚂𝙾𝙽𝙶 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳 𝙼𝙾𝙳𝚄𝙻𝙴</b>
-
-<b>𝚂𝙾𝙽𝙶 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳 𝙼𝙾𝙳𝚄𝙻𝙴, 𝙵𝙾𝚁 𝚃𝙷𝙾𝚂𝙴 𝚆𝙷𝙾 𝙻𝙾𝚅𝙴 𝙼𝚄𝚂𝙸𝙲. 𝚈𝙾𝚄 𝙲𝙰𝙽 𝚄𝚂𝙴 𝚃𝙷𝙸𝚂 𝙵𝙴𝙰𝚃𝚄𝙴 𝙵𝙾𝚁 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳 𝙰𝙽𝚈 𝚂𝙾𝙽𝙶 𝚆𝙸𝚃𝙷 𝚂𝚄𝙿𝙴𝚁 𝙵𝙰𝚂𝚃 𝚂𝙿𝙴𝙴𝙳.𝚆𝙾𝚁𝙺𝚂 𝙾𝙽𝙻𝚈 𝙾𝙽 𝙶𝚁𝙾𝚄𝙿𝚂../</b>
-
-<b>𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂</b>
-
-››  /song 𝚂𝙾𝙽𝙶 𝙽𝙰𝙼𝙴 
-
-𝚆𝙾𝚁𝙺𝚂 𝙾𝙽𝙻𝚈 𝙾𝙽 𝙶𝚁𝙾𝚄𝙿
-
-𝙲𝚁𝙴𝙳𝙸𝚃𝚂 :- <a href=https://t.me/OpusTechz>𝙾𝙿𝚄𝚂-𝚃𝙴𝙲𝙷𝚉</a>"""
-    PIN_TXT ="""<b>PIN MODULE</b>
-<b>𝙿𝙸𝙽 𝙰 𝙼𝙴𝚂𝚂𝙰𝙶𝙴../</b>
-
-<b>𝙰𝙻𝙻 𝚃𝙷𝙴 𝙿𝙸𝙽 𝚁𝙴𝙿𝙻𝙰𝚃𝙴𝙳 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂 𝙲𝙰𝙽 𝙱𝙴 𝙵𝙾𝚄𝙽𝙳 𝙷𝙴𝚁𝙴::</b>
-
-<b>📌𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂 𝙰𝙽𝙳 𝚄𝚂𝙰𝙶𝙴📌</b>
-
-◉ /pin :- 𝚃𝙾 𝙿𝙸𝙽 𝚃𝙷𝙴 𝙼𝙴𝚂𝚂𝙰𝙶𝙴 𝙾𝙽 𝚈𝙾𝚄𝚁 𝙲𝙷𝙰𝚃𝚂
-◉ /unpin :- 𝚃𝙾 𝚄𝙽𝙿𝙸𝙽 𝚃𝙷𝙴 𝙲𝚄𝚁𝚁𝙴𝙴𝙽𝚃 𝙿𝙸𝙽𝙽𝙴𝙳 𝙼𝙴𝚂𝙰𝙰𝙶𝙴"""
-    PASTE_TXT = """Help: <b>Paste</b>
-
-Paste some texts or documents on a website!
-
-<b>Commands and Usage:</b>
-
+    SONG_TXT = """Help: <b><u>Song Download</u></b>
+<b>By Using This Module You Can Download Your Favorite Tunes, For Those Who Love Music.</b>
+<b>⪼ 𝖢𝗈𝗆𝗆𝖺𝗇𝖽𝗌 𝖠𝗇𝖽 𝖴𝗌𝖺𝗀𝖾</b>
+• /song [Correct Song Name] - To Download Music From YouTube
+<b>Note</b>
+• Can Be Used By Everyone
+• Works in bot pm Also"""
+    PIN_TXT ="""Help: <b><u>PIN</u></b>
+<b>By Using This Module Keep Your Chat Up To Date On The Latest News With A Simple Pinned Message!</b>
+<b>⪼ 𝖢𝗈𝗆𝗆𝖺𝗇𝖽𝗌 𝖠𝗇𝖽 𝖴𝗌𝖺𝗀𝖾</b>
+◉ /pin :- Pin The Message You Replied To Message To Send A Notification To Group Members
+◉ /unpin :- Unpin The Current Pinned Message. If Used As A Reply, Unpins The Replied To Message"""
+    PASTE_TXT = """Help: <b><u>Paste</u></b>
+<b>By Using This Module, You can Paste some texts or documents on a website!</b>
+<b>⪼ 𝖢𝗈𝗆𝗆𝖺𝗇𝖽𝗌 𝖠𝗇𝖽 𝖴𝗌𝖺𝗀𝖾</b>
 • /paste [text] - paste the given text on Pasty
-
 <b>NOTE:</b>
-
 • These commands works on both pm and group.
 • These commands can be used by any group member."""
-    TTS_TXT = """Help: <b> TTS 🎤 module:</b>
-
-Translate text to speech
-
-<b>Commands and Usage:</b>
-
-• /tts <text> : convert text to speech
-
+    TTS_TXT = """Help: <b><u>Text To Speech</u></b>
+<u>By Using This Module, You CanTranslate text to speech</b>
+<b>⪼ 𝖢𝗈𝗆𝗆𝖺𝗇𝖽𝗌 𝖠𝗇𝖽 𝖴𝗌𝖺𝗀𝖾</b>
+• /tts <text> : Convert Your text to speech
 <b>NOTE:</b>
-
-• IMDb should have admin privillage.
+• 𝖭𝖺𝗍𝗁𝖺𝗅𝗂𝖺 should have admin privillage.
 • These commands works on both pm and group.
 • IMDb can translate texts to 200+ languages."""
     PINGS_TXT ="""<b>🌟 Ping:</b>
