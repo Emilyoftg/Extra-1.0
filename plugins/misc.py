@@ -60,10 +60,11 @@ async def showid(client, message):
 @Client.on_message(filters.command("about"))
 async def aboutme(client, message):
         buttons= [[
-            InlineKeyboardButton('♥️ 𝙳𝙴𝙿𝙻𝙾𝚈 𝚃𝚄𝚃𝙾𝚁𝙸𝙰𝙻 ♥️', url='https://youtu.be/kB9TkCs8cX0')
+            InlineKeyboardButton('🤖 Updates', url='https://t.me/MCMovieBot'),
+            InlineKeyboardButton('🗒️ Disclaimer', callback_data='source')
             ],[
-            InlineKeyboardButton('🏠 𝙷𝙾𝙼𝙴 🏠', callback_data='start'),
-            InlineKeyboardButton('🔐 𝙲𝙻𝙾𝚂𝙴 🔐', callback_data='close_data')
+            InlineKeyboardButton('🏠 𝖧𝗈𝗆𝖾', callback_data='start'),
+            InlineKeyboardButton('Close 🔒', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -77,10 +78,10 @@ async def aboutme(client, message):
 async def who_is(client, message):
     # https://github.com/SpEcHiDe/PyroGramBot/blob/master/pyrobot/plugins/admemes/whois.py#L19
     status_message = await message.reply_text(
-        "`𝚂𝙴𝙰𝚁𝙲𝙷𝙸𝙽𝙶 𝚄𝚂𝙴𝚁...`"
+        "`𝖲𝖾𝖺𝗋𝖼𝗁𝗂𝗇𝗀 𝖴𝗌𝖾𝗋...!`"
     )
     await status_message.edit(
-        "`𝙰𝙲𝙲𝙴𝚂𝚂𝙸𝙽𝙶 𝙸𝙽𝙵𝙾𝚁𝙼𝙰𝚃𝙸𝙾𝙽...`"
+        "`𝖠𝖼𝖼𝖾𝗌𝗌𝗂𝗇𝗀 𝖨𝗇𝖿𝗈𝗋𝗆𝖺𝗍𝗂𝗈𝗇𝗌...!`"
     )
     from_user = None
     from_user_id, _ = extract_user(message)
@@ -149,41 +150,43 @@ async def who_is(client, message):
 @Client.on_message(filters.command("help"))
 async def help(client, message):
         buttons = [[
-            InlineKeyboardButton('𝙼𝙰𝙽𝚄𝙴𝙻 𝙵𝙸𝙻𝚃𝙴𝚁', callback_data='manuelfilter'),
-            InlineKeyboardButton('𝙰𝚄𝚃𝙾 𝙵𝙸𝙻𝚃𝙴𝚁', callback_data='autofilter'),
-            InlineKeyboardButton('𝙲𝙾𝙽𝙽𝙴𝙲𝚃𝙸𝙾𝙽𝚂', callback_data='coct')
+            InlineKeyboardButton('𝖬𝖺𝗇𝗎𝖺𝗅 𝖥𝗂𝗅𝗍𝖾𝗋', callback_data='manuelfilter'),
+            InlineKeyboardButton('𝖠𝗎𝗍𝗈 𝖥𝗂𝗅𝗍𝖾𝗋', callback_data='autofilter'),
+            InlineKeyboardButton('𝖢𝗈𝗇𝗇𝖾𝖼𝗍𝗂𝗈𝗇𝗌', callback_data='coct')
             ],[
-            InlineKeyboardButton('𝚂𝙾𝙽𝙶', callback_data='songs'),
-            InlineKeyboardButton('𝙴𝚇𝚃𝚁𝙰', callback_data='extra'),
-            InlineKeyboardButton("𝚅𝙸𝙳𝙴𝙾", callback_data='video')
+            InlineKeyboardButton('𝖬𝗎𝗌𝗂𝖼', callback_data='songs'),
+            InlineKeyboardButton('𝖤𝗑𝗍𝗋𝖺', callback_data='extra'),
+            InlineKeyboardButton("𝖵𝖾𝖽𝗂𝗈", callback_data='video')
             ],[
-            InlineKeyboardButton('𝙿𝙸𝙽', callback_data='pin'), 
-            InlineKeyboardButton('𝙿𝙰𝚂𝚃𝙴', callback_data='pastes'),
-            InlineKeyboardButton("𝙸𝙼𝙰𝙶𝙴", callback_data='image')
+            InlineKeyboardButton('𝖯𝗂𝗇', callback_data='pin'), 
+            InlineKeyboardButton('𝖯𝖺𝗌𝗍𝖾', callback_data='pastes'),
+            InlineKeyboardButton("𝖨𝗆𝖺𝗀𝖾", callback_data='image')
             ],[
-            InlineKeyboardButton('𝙵𝚄𝙽', callback_data='fun'), 
-            InlineKeyboardButton('𝙹𝚂𝙾𝙽𝙴', callback_data='son'),
-            InlineKeyboardButton('𝚃𝚃𝚂', callback_data='ttss')
+            InlineKeyboardButton('𝖥𝗎𝗇', callback_data='fun'), 
+            InlineKeyboardButton('𝖩𝗌𝗈𝗇', callback_data='son'),
+            InlineKeyboardButton('𝖳𝖳𝖲', callback_data='ttss')
             ],[
-            InlineKeyboardButton('𝙿𝚄𝚁𝙶𝙴', callback_data='purges'),
-            InlineKeyboardButton('𝙿𝙸𝙽𝙶', callback_data='pings'),
-            InlineKeyboardButton('𝚃𝙴𝙻𝙴𝙶𝚁𝙰𝙿𝙷', callback_data='tele')
+            InlineKeyboardButton('𝖯𝗎𝗋𝗀𝖾', callback_data='purges'),
+            InlineKeyboardButton('𝖯𝗂𝗇𝗀', callback_data='pings'),
+            InlineKeyboardButton('𝖳𝖾𝗅𝖾𝗀𝗋𝖺𝗉𝗁', callback_data='tele')
             ],[
-            InlineKeyboardButton('𝚆𝙷𝙾𝙸𝚂', callback_data='whois'),
-            InlineKeyboardButton('𝙼𝚄𝚃𝙴', callback_data='restric'),
-            InlineKeyboardButton('𝙺𝙸𝙲𝙺', callback_data='zombies')
+            InlineKeyboardButton('𝖶𝗁𝗈𝖨𝖲', callback_data='whois'),
+            InlineKeyboardButton('𝖬𝗎𝗍𝖾', callback_data='restric'),
+            InlineKeyboardButton('𝖹𝗈𝗆𝖻𝗂𝖾𝗌', callback_data='zombies')
             ],[
-            InlineKeyboardButton('𝚁𝙴𝙿𝙾𝚁𝚃', callback_data='report'),
-            InlineKeyboardButton('𝚈𝚃-𝚃𝙷𝚄𝙼𝙱', callback_data='ytthumb'),
-            InlineKeyboardButton('𝚂𝚃𝙸𝙲𝙺𝙴𝚁-𝙸𝙳', callback_data='sticker')
+            InlineKeyboardButton('𝖱𝖾𝗉𝗈𝗋𝗍', callback_data='report'),
+            InlineKeyboardButton('𝖳𝗁𝗎𝗆𝖻𝗇𝖺𝗂𝗅', callback_data='ytthumb'),
+            InlineKeyboardButton('𝖲𝗍𝗂𝖼𝗄𝖾𝗋𝗌', callback_data='sticker')
             ],[
-            InlineKeyboardButton('𝙲𝙾𝚅𝙸𝙳', callback_data='corona'),
-            InlineKeyboardButton('𝙰𝚄𝙳𝙸𝙾-𝙱𝙾𝙾𝙺', callback_data='abook'),
-            InlineKeyboardButton('𝚄𝚁𝙻-𝚂𝙷𝙾𝚁𝚃', callback_data='urlshort')
+            InlineKeyboardButton('𝖢𝗈𝗏𝗂𝖽', callback_data='corona'),
+            InlineKeyboardButton('𝖠𝗎𝖽𝗂𝗈-𝖡𝗈𝗈𝗄', callback_data='abook'),
+            InlineKeyboardButton('𝖴𝗋𝗅 𝖲𝗁𝗈𝗋𝗍𝗇𝖾𝗋', callback_data='urlshort')
             ],[
-            InlineKeyboardButton('𝙶-𝚃𝚁𝙰𝙽𝚂', callback_data='gtrans'),
-            InlineKeyboardButton('𝙵𝙸𝙻𝙴-𝚂𝚃𝙾𝚁𝙴', callback_data='newdata'),
-            InlineKeyboardButton('𝚂𝚃𝙰𝚃𝚄𝚂', callback_data='stats')
+            InlineKeyboardButton('𝖳𝗋𝖺𝗇𝗌𝗅𝖺𝗍𝖾', callback_data='gtrans'),
+            InlineKeyboardButton('𝖥𝗂𝗅𝖾 𝖲𝗍𝗈𝗋𝖾', callback_data='newdata'),
+            InlineKeyboardButton('𝖲𝗍𝖺𝗍𝗎𝗌', callback_data='stats')
+            ],[
+            InlineKeyboardButton('🔐 𝖢𝗅𝗈𝗌𝖾 𝖬𝖾𝗇𝗎 🔐 ', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
