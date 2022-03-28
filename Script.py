@@ -1,11 +1,10 @@
 class script(object):
     START_TXT = """<b>Hello {},
 I'm A Telegram 𝗌𝗂𝗆𝗉𝗅𝖾 𝗉𝗋𝖾 𝖿𝗎𝗇𝖼𝗍𝗂𝗈𝗇𝖾𝖽 AutoFilter Bot.Its Easy To Use Me ):\nJust Add Me To Your Group As Admin,Hit The /𝖢𝖼elpFor More Info</b>"""
-    HELP_TXT = """𝙷𝙴𝚈 {}
-𝖧𝖾𝗋𝖾 𝗂𝗌 𝗍𝗁𝖾 𝖴𝗌𝗎𝖺𝗅 𝖼𝗈𝗆𝗆𝖺𝗇𝖽𝗌: 
-/start - 𝖢𝗁𝖾𝖼𝗄 𝖶𝗁𝖾𝗍𝗁𝖾𝗋 𝖨'𝗆 𝖮𝗇𝗅𝗂𝗇𝖾 
-/help - 𝖦𝖾𝗍 𝖳𝗁𝗂𝗌 𝖧𝖾𝗅𝗉 𝖬𝖾𝗌𝗌𝖺𝗀𝖾
-/about - 𝖠𝖻𝗈𝗎𝗍 𝖬𝖾
+   HELP_TXT = """<b>𝖧𝖾𝗒 {} 𝖧𝖾𝗋𝖾 𝗂𝗌 𝗍𝗁𝖾 𝖴𝗌𝗎𝖺𝗅 𝖼𝗈𝗆𝗆𝖺𝗇𝖽𝗌:
+/start - 𝖼𝗁𝖾𝖼𝗄 𝗐𝗁𝖾𝗍𝗁𝖾𝗋 𝗂𝗆 𝗈𝗇𝗅𝗂𝗇𝖾 
+/help - 𝗀𝖾𝗍 𝗍𝗁𝗂𝗌 𝗁𝖾𝗅𝗉 𝗆𝖾𝗌𝗌𝖺𝗀𝖾
+/about - 𝖺𝖻𝗈𝗎𝗍 𝗆𝖾</b>"""
     ABOUT_TXT = """
 <b>➥  My Name</b> : <b><i><a href="https://t.me/MC_MovieBot">Mᴏᴠɪᴇ Bᴏᴛ 😎</a></i></b>
 <b>➥  Owner</b> : <b><i><a href="https://t.me/TomHiiddleston">Tᴏᴍ Hɪᴅᴅʟᴇsᴛᴏɴ</a></i></b>
@@ -17,7 +16,7 @@ I'm A Telegram 𝗌𝗂𝗆𝗉𝗅𝖾 𝗉𝗋𝖾 𝖿𝗎𝗇𝖼𝗍𝗂�
 <b>➥ Build Stats</b> : <code>V6.0 [BETA]</code>
 
 ©️ MᴀɪɴᴛᴀɪɴᴇD Bʏ  <a href=https://t.me/MovieClubOfficiall>Mᴏᴠɪᴇ Cʟᴜʙ</a>"""
-    DONATION_TXT = """<b>𝐃𝐨𝐧𝐚𝐭𝐢𝐨𝐧 & 𝐏𝐚𝐢𝐝 𝐏𝐫𝐨𝐦𝐨𝐭𝐢𝐨𝐧</b> 
+    SOURCE_TXT  = """<b>𝐃𝐨𝐧𝐚𝐭𝐢𝐨𝐧 & 𝐏𝐚𝐢𝐝 𝐏𝐫𝐨𝐦𝐨𝐭𝐢𝐨𝐧</b> 
 
 ›› <b>𝐃𝐨𝐧𝐚𝐭𝐢𝐨𝐧</b>
 
