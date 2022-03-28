@@ -16,7 +16,7 @@ I'm A Telegram 𝗌𝗂𝗆𝗉𝗅𝖾 𝗉𝗋𝖾 𝖿𝗎𝗇𝖼𝗍𝗂�
 <b>➥ Build Stats</b> : <code>V6.0 [BETA]</code>
 
 ©️ MᴀɪɴᴛᴀɪɴᴇD Bʏ  <a href=https://t.me/MovieClubOfficiall>Mᴏᴠɪᴇ Cʟᴜʙ</a>"""
-   SOURCE_TXT = """
+    SOURCE_TXT = """
 <code>All the files in this bot are freely available on the internet or posted by somebody else.This bot is indexing files which are already uploaded on Telegram for easy of searching, We respect all the copyright laws and works in compliance with DMCA and EUCD. If anything is against law please contact us so that it can be removed asap.</code>"""
     FILE_TXT = """Help: <b><u>File Store</u></b>
 <b>By Using This Module You can store files in My database and I will You A Permanent link To access The saved Files.If You want to add files from a Public channel send the file link only or You want to store files from a Private channel you must make me admin on their to access files files (only media messages  can be stored).
