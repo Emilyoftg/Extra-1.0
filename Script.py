@@ -30,15 +30,16 @@ I'm A Telegram 𝗌𝗂𝗆𝗉𝗅𝖾 𝗉𝗋𝖾 𝖿𝗎𝗇𝖼𝗍𝗂�
 <b>By Using This Module You Can Get A User Details
 ⪼ 𝖢𝗈𝗆𝗆𝖺𝗇𝖽𝗌 𝖠𝗇𝖽 𝖴𝗌𝖺𝗀𝖾</b>
 •/whois : Get a users full details"""
-    FUN_TXT ="""<b>Gᴀᴍᴇs</b> 
+    FUN_TXT ="""Help: <b><u>Fun</u></b> 
     
-<b>⚡ 𝙹𝚄𝚂𝚃 𝚂𝙾𝙼𝙴 𝙺𝙸𝙽𝙳 𝙾𝙵 𝙵𝚄𝙽 𝚃𝙷𝙸𝙽𝙶'𝚂 ⚡</b>
- 
-𝟣. /dice - 𝚁𝙾𝙻𝙴 𝚃𝙷𝙴 𝙳𝙸𝙲𝙴 
-𝟤. /Throw 𝗈𝗋 /Dart - 𝚃𝙾 𝙼𝙰𝙺𝙴 𝙳𝙰𝚁𝚃 
-3. /Runs - 𝚂𝙾𝙼𝙴 𝚁𝙰𝙽𝙳𝙾𝙼 𝙳𝙸𝙰𝙻𝙾𝙶𝚄𝙴𝚂 
-4. /Goal or /Shoot - 𝚃𝙾 𝙼𝙰𝙺𝙴 𝙰 𝙶𝙾𝙰𝙻 𝙾𝚁 𝚂𝙷𝙾𝙾𝚃
-5. /luck or /cownd - 𝚂𝙿𝙸𝙽 𝙰𝙽𝙳 𝚃𝚁𝚈 𝚈𝙾𝚄𝚁 𝙻𝚄𝙲𝙺"""
+<b>🎲 NOTHING MUCH JUST SOME FUN THINGS
+⪼ 𝖢𝗈𝗆𝗆𝖺𝗇𝖽𝗌 𝖠𝗇𝖽 𝖴𝗌𝖺𝗀𝖾</b>
+t𝗋𝗒 𝗍𝗁𝗂𝗌 𝖮𝗎𝗍: 
+𝟣. /dice - Roll The Dice 
+𝟤. /Throw 𝗈𝗋 /Dart - 𝖳𝗈 𝖬𝖺𝗄𝖾 Drat 
+3. /Runs - Jokes 
+4. /Goal or /Shoot - To Make A Goal Or Shoot
+5. /luck or /cownd - Spin the Lucky"""
     MANUELFILTER_TXT = """Help: <b><u>Manual Filters</u></b>
 <b>Filter is the feature were users can set automated replies for a particular keyword and 𝖭𝖺𝗍𝗁𝖺𝗅𝗂𝖺  will respond whenever a keyword is found the message</b>
 <b>NOTE:</b>
@@ -70,30 +71,21 @@ I'm A Telegram 𝗌𝗂𝗆𝗉𝗅𝖾 𝗉𝗋𝖾 𝖿𝗎𝗇𝖼𝗍𝗂�
 • These commands works on both pm and group.
 • These commands can be used by any group member."""
     TTS_TXT = """Help: <b><u>Text To Speech</u></b>
-<u>By Using This Module, You CanTranslate text to speech</b>
+<b>By Using This Module, You Can Translate text to speech</b>
 <b>⪼ 𝖢𝗈𝗆𝗆𝖺𝗇𝖽𝗌 𝖠𝗇𝖽 𝖴𝗌𝖺𝗀𝖾</b>
 • /tts <text> : Convert Your text to speech
 <b>NOTE:</b>
 • 𝖭𝖺𝗍𝗁𝖺𝗅𝗂𝖺 should have admin privillage.
 • These commands works on both pm and group.
 • IMDb can translate texts to 200+ languages."""
-    PINGS_TXT ="""<b>🌟 Ping:</b>
-
-Helps you to know your ping 🚶🏼‍♂️
-
-<b>Commands:</b>
-
-• /alive - To check you are alive.
-• /help - To get help.
-• /ping - To get your ping.
-• /repo - Source Code.
-• /channel - Channel Details.
-• /ajax - Bot Link.
-<b>🏹Usage🏹 :</b>
-
-• This commands can be used in pms and groups
-• This commands can be used buy everyone in the groups and bots pm
-• Share us for more features"""
+    PINGS_TXT ="""Help: <b><u>Torrent Search</u></b>
+<b>By Using This Module, You Can Get Your Torrent Link From Various Resource</b> 
+<b>⪼ 𝖢𝗈𝗆𝗆𝖺𝗇𝖽𝗌 𝖠𝗇𝖽 𝖴𝗌𝖺𝗀𝖾</b>:
+• /torrent or /tor : Get Your Torrent Link From Various Resource.
+<b>NOTE:</b>
+• 𝖭𝖺𝗍𝗁𝖺𝗅𝗂𝖺 should have admin privillage.
+• These commands works on both pm and group.
+• These commands can be used by any group member."""
     TELE_TXT = """<b>▫️HELP: Telegraph▪️</b>
 
 Do as you wish with telegra.ph module!
