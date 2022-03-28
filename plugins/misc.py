@@ -167,7 +167,7 @@ async def help(client, message):
             InlineKeyboardButton('𝖳𝖳𝖲', callback_data='ttss')
             ],[
             InlineKeyboardButton('𝖯𝗎𝗋𝗀𝖾', callback_data='purges'),
-            InlineKeyboardButton('𝖯𝗂𝗇𝗀', callback_data='pings'),
+            InlineKeyboardButton('𝖳𝗈𝗋𝗋𝖾𝗇𝗍', callback_data='pings'),
             InlineKeyboardButton('𝖳𝖾𝗅𝖾𝗀𝗋𝖺𝗉𝗁', callback_data='tele')
             ],[
             InlineKeyboardButton('𝖶𝗁𝗈𝖨𝖲', callback_data='whois'),
