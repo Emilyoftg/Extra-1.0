@@ -109,14 +109,14 @@ async def give_filter(client, message):
 async def next_page(bot, query):
     ident, req, key, offset = query.data.split("_")
     if int(req) not in [query.from_user.id, 0]:
-        return await query.answer("😁 𝗛𝗲𝘆 𝗙𝗿𝗶𝗲𝗻𝗱,𝗣𝗹𝗲𝗮𝘀𝗲 𝗦𝗲𝗮𝗿𝗰𝗵 𝗬𝗼𝘂𝗿𝘀𝗲𝗹𝗳.", show_alert=True)
+        return await query.answer(f"⚠️ 𝖧𝖾𝗒, {query.from_user.first_name}! Search Your Own File, Don't Click Others Results 😬", show_alert=True)
     try:
         offset = int(offset)
     except:
         offset = 0
     search = BUTTONS.get(key)
     if not search:
-        await query.answer("𝐋𝐢𝐧𝐤 𝐄𝐱𝐩𝐢𝐫𝐞𝐝 𝐊𝐢𝐧𝐝𝐥𝐲 𝐏𝐥𝐞𝐚𝐬𝐞 𝐒𝐞𝐚𝐫𝐜𝐡 𝐀𝐠𝐚𝐢𝐧 🙂.", show_alert=True)
+        await query.answer(f"⚠️ Hey, {query.from_user.first_name}! You are using one of my old messages, send the request again ⚠️", show_alert=True)
         return
 
     files, n_offset, total = await get_search_results(search, offset=offset, filter=True)
@@ -193,14 +193,14 @@ async def private_give_filter(client, message):
 async def advantage_spoll_choker(bot, query):
     _, user, movie_ = query.data.split('#')
     if int(user) != 0 and query.from_user.id != int(user):
-        return await query.answer("😁 𝗛𝗲𝘆 𝗙𝗿𝗶𝗲𝗻𝗱,𝗣𝗹𝗲𝗮𝘀𝗲 𝗦𝗲𝗮𝗿𝗰𝗵 𝗬𝗼𝘂𝗿𝘀𝗲𝗹𝗳.", show_alert=True)
+        return await query.answer(f"⚠️ 𝖧𝖾𝗒, {query.from_user.first_name}! Search Your Own File, Don't Click Others Results 😬", show_alert=True)
     if movie_ == "close_spellcheck":
         return await query.message.delete()
     movies = SPELL_CHECK.get(query.message.reply_to_message.message_id)
     if not movies:
-        return await query.answer("𝐋𝐢𝐧𝐤 𝐄𝐱𝐩𝐢𝐫𝐞𝐝 𝐊𝐢𝐧𝐝𝐥𝐲 𝐏𝐥𝐞𝐚𝐬𝐞 𝐒𝐞𝐚𝐫𝐜𝐡 𝐀𝐠𝐚𝐢𝐧 🙂.", show_alert=True)
+        return await query.answer(f"⚠️ Hey, {query.from_user.first_name}! You are using one of my old messages, send the request again ⚠️", show_alert=True)
     movie = movies[(int(movie_))]
-    await query.answer('𝙲𝙷𝙴𝙲𝙺𝙸𝙽𝙶 𝙵𝙸𝙻𝙴 𝙾𝙽 𝙼𝚈 𝙳𝙰𝚃𝙰𝙱𝙰𝚂𝙴...//')
+    await query.answer('𝖢𝗁𝖾𝖼𝗄𝗂𝗇𝗀 𝖥𝗂𝗅𝖾 𝖨𝗇 𝖬𝗒 𝖣𝖺𝗍𝖺𝖻𝖺𝗌𝖾...!')
     k = await manual_filters(bot, query.message, text=movie)
     if k == False:
         files, offset, total_results = await get_search_results(movie, offset=0, filter=True)
@@ -253,7 +253,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         if (st.status == "creator") or (str(userid) in ADMINS):
             await del_all(query.message, grp_id, title)
         else:
-            await query.answer("You need to be Group Owner or an Auth User to do that!", show_alert=True)
+            await query.answer(f"🤒 Hey, {query.from_user.first_name}! You need to be Group Owner or an Auth User to do that! 🤒", show_alert=True)
     elif query.data == "delallcancel":
         userid = query.from_user.id
         chat_type = query.message.chat.type
@@ -272,7 +272,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 except:
                     pass
             else:
-                await query.answer("Buddy Don't Touch Others Property 😁", show_alert=True)
+                await query.answer(f"⚠️ Hey, {query.from_user.first_name}! That's not for you!! ⚠️", show_alert=True)
     elif "groupcb" in query.data:
         await query.answer()
 
@@ -803,7 +803,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('𝖳𝖳𝖲', callback_data='ttss')
             ],[
             InlineKeyboardButton('𝖯𝗎𝗋𝗀𝖾', callback_data='purges'),
-            InlineKeyboardButton('𝖯𝗂𝗇𝗀', callback_data='pings'),
+            InlineKeyboardButton('𝖳𝗈𝗋𝗋𝖾𝗇𝗍', callback_data='pings'),
             InlineKeyboardButton('𝖳𝖾𝗅𝖾𝗀𝗋𝖺𝗉𝗁', callback_data='tele')
             ],[
             InlineKeyboardButton('𝖶𝗁𝗈𝖨𝖲', callback_data='whois'),
@@ -870,7 +870,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
-            text="𝙾𝙿𝚄𝚂-𝚃𝙴𝙲𝙷𝚉"
+            text="𝖬𝗈𝗏𝗂𝖾 𝖢𝗅𝗎𝖻 𝖮𝖿𝖿𝗂𝖼𝗂𝖺𝗅"
         )
         await query.message.edit_text(
             text=script.ABOUT_TXT,
@@ -1375,20 +1375,30 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"Here is what i found for your query {search}"
+        cap = f"<b>🎬 Title : {search}\n🌟 8.7/10 | IMDb\n🎭 Genres: Document, Drama, Thriller\n👤 Requested By: {message.from_user.mention}\n\n© By {message.chat.title}</b>"
     if imdb and imdb.get('poster'):
         try:
-            await message.reply_photo(photo=imdb.get('poster'), caption=cap[:1024],
-                                      reply_markup=InlineKeyboardMarkup(btn))
+            hehe = await message.reply_photo(photo=imdb.get('poster'), caption=cap[:1024], reply_to_message_id=reply_id, reply_markup=InlineKeyboardMarkup(btn))
+            await asyncio.sleep(300)
+            await hehe.delete()
+            await message.delete()
         except (MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty):
             pic = imdb.get('poster')
             poster = pic.replace('.jpg', "._V1_UX360.jpg")
-            await message.reply_photo(photo=poster, caption=cap[:1024], reply_markup=InlineKeyboardMarkup(btn))
-        except Exception as e:
-            logger.exception(e)
-            await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
+            hmm = await message.reply_photo(photo=poster, caption=cap[:1024], reply_to_message_id=reply_id, reply_markup=InlineKeyboardMarkup(btn))
+            await asyncio.sleep(300)
+            await hmm.delete()
+            await message.delete()
+        logger.exception(e)
+            fek = await message.reply_photo(photo="https://telegra.ph/file/c5f1489cc706063baf6d4.jpg", caption=cap, reply_to_message_id=reply_id, reply_markup=InlineKeyboardMarkup(btn))
+            await asyncio.sleep(300)
+            await fek.delete()
+            await msg.delete()
     else:
-        await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
+        fuk = await message.reply_photo(photo="https://telegra.ph/file/14af383f7c4aa2915c8c5.jpg", caption=cap, reply_to_message_id=reply_id, reply_markup=InlineKeyboardMarkup(btn))
+        await asyncio.sleep(300)
+        await fuk.delete()
+        await msg.delete()
     if spoll:
         await msg.message.delete()
 
