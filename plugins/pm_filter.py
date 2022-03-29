@@ -1452,7 +1452,7 @@ async def advantage_spell_chok(msg):
     ] for k, movie in enumerate(movielist)]
     btn.append([InlineKeyboardButton(text="Close", callback_data=f'spolling#{user}#close_spellcheck')])
     M = await msg.reply_sticker(sticker="CAACAgUAAxkBAAEPAAFkYkJ0HDc7FDsPXc7Kn7FW2iy67lUAAqUEAAIHjBFWnGf5YCJdzK8jBA",
-    caption="I couldn't find anything related to that\nDid you mean any one of these?"
+    caption="I couldn't find anything related to that\nDid you mean any one of these?",
                     reply_markup=InlineKeyboardMarkup(btn))
 
 async def manual_filters(client, message, text=False):
