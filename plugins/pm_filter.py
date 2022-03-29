@@ -1439,7 +1439,7 @@ async def advantage_spell_chok(msg):
     movielist += [(re.sub(r'(\-|\(|\)|_)', '', i, flags=re.IGNORECASE)).strip() for i in gs_parsed]
     movielist = list(dict.fromkeys(movielist))  # removing duplicates
     if not movielist:
-        k = await msg.reply("I couldn't find anything related to that. Check your spelling")
+        k = await msg.reply(f"𝖧𝖾𝗒 {query.from_user.first_name}, 𝖨 𝖢𝗈𝗎𝗅𝖽𝗇'𝗍 𝖥𝗂𝗇𝖽 𝖠𝗇𝗒𝗍𝗁𝗂𝗇𝗀 𝖱𝖾𝗅𝖺𝗍𝖾𝖽 𝖳𝗈 𝖳𝗁𝖺𝗍. 𝖢𝗁𝖾𝖼𝗄 𝖸𝗈𝗎𝗋 𝖲𝗉𝖾𝗅𝗅𝗂𝗇𝗀 & 𝖲𝖾𝗇𝖽 𝖳𝗁𝖾 𝖢𝗈𝗋𝗋𝖾𝖼𝗍 𝖮𝗇𝖾")
         await asyncio.sleep(8)
         await k.delete()
         return
@@ -1451,8 +1451,7 @@ async def advantage_spell_chok(msg):
         )
     ] for k, movie in enumerate(movielist)]
     btn.append([InlineKeyboardButton(text="Close", callback_data=f'spolling#{user}#close_spellcheck')])
-    M = await msg.reply_sticker(sticker="CAACAgUAAxkBAAEPAAFkYkJ0HDc7FDsPXc7Kn7FW2iy67lUAAqUEAAIHjBFWnGf5YCJdzK8jBA",
-    caption="I couldn't find anything related to that\nDid you mean any one of these?",
+    await msg.reply_sticker(sticker="CAACAgUAAxkBAAEPAAFkYkJ0HDc7FDsPXc7Kn7FW2iy67lUAAqUEAAIHjBFWnGf5YCJdzK8jBA",
                     reply_markup=InlineKeyboardMarkup(btn))
 
 async def manual_filters(client, message, text=False):
