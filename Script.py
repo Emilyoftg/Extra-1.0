@@ -270,7 +270,7 @@ This module only works for my admins
 
     STICKER_TXT = """𝖧𝖾𝗅𝗉: <b><u>𝖲𝗍𝗂𝖼𝗄𝖾𝗋 𝖨𝖣</u></b>
 
-𝖳𝗁𝗂𝗌 𝖬𝗈𝖽𝗎𝗅𝖾 𝖧𝖾𝗅𝗉𝗌 𝖸𝗈𝗎 𝖳𝗈 Get 𝖠𝗇𝗒 Sticker ID
+<b>𝖳𝗁𝗂𝗌 𝖬𝗈𝖽𝗎𝗅𝖾 𝖧𝖾𝗅𝗉𝗌 𝖸𝗈𝗎 𝖳𝗈 Get 𝖠𝗇𝗒 Sticker ID</b>
  
 <b>Commands and Usage:</b>
  
@@ -281,7 +281,9 @@ This module only works for my admins
 
 
     YTTHUMB_TXT = """𝖧𝖾𝗅𝗉: <b><u>𝖸𝗈𝗎𝖳𝗎𝖻𝖾 𝖳𝗁𝗎𝗆𝖻𝗇𝖺𝗂𝗅 𝖣𝗈𝗐𝗇𝗅𝗈𝖺𝖽𝖾𝗋</u></b>
-    
+
+<b>𝖳𝗁𝗂𝗌 𝖬𝗈𝖽𝗎𝗅𝖾 𝖧𝖾𝗅𝗉𝗌 𝖸𝗈𝗎 𝖳𝗈 𝖣𝗈𝗐𝗇𝗅𝗈𝖺𝖽 𝖠𝗇𝗒 𝖵𝖾𝖽𝗂𝗈𝗌 𝖳𝗁𝗎𝗆𝗇𝖺𝗂𝗅𝗌 𝖥𝗋𝗈𝗆 𝖸𝗈𝗎𝗍𝗎𝖻𝖾</b>
+
 <b>Commands and Usage:</b>
 » /ytthumb {𝖵𝖾𝖽𝗂𝗈 𝖫𝗂𝗇𝗄}
 
@@ -293,7 +295,7 @@ This module only works for my admins
 
     ABOOK_TXT = """𝖧𝖾𝗅𝗉 : <b><u>𝖠𝗎𝖽𝗂𝗈 𝖡𝗈𝗈𝗄</u></b>
 
-<𝖻>𝖳𝗁𝗂𝗌 𝖬𝗈𝖽𝗎𝗅𝖾 𝖧𝖾𝗅𝗉 𝖸𝗈𝗎 𝖳𝗈 𝖢𝗈𝗇𝗏𝖾𝗋𝗍 𝖠 𝖯𝖣𝖥 𝖥𝗂𝗅𝖾 𝖳𝗈 𝖠 𝖠𝗎𝖽𝗂𝗈 𝖥𝗂𝗅𝖾 𝚏𝚒𝚕𝚎</b>
+<b>𝖳𝗁𝗂𝗌 𝖬𝗈𝖽𝗎𝗅𝖾 𝖧𝖾𝗅𝗉 𝖸𝗈𝗎 𝖳𝗈 𝖢𝗈𝗇𝗏𝖾𝗋𝗍 𝖠 𝖯𝖣𝖥 𝖥𝗂𝗅𝖾 𝖳𝗈 𝖠 𝖠𝗎𝖽𝗂𝗈 𝖥𝗂𝗅𝖾 𝚏𝚒𝚕𝚎</b>
 
 <b>Commands and Usage:</b>
 
@@ -301,7 +303,7 @@ This module only works for my admins
 
     GTRANS_TXT = """𝖧𝖾𝗅𝗉: <b><u>𝖦𝗈𝗈𝗀𝗅𝖾 𝖳𝗋𝖺𝗇𝗌𝗅𝖺𝗍𝗈𝗋</u></b>
 
-<𝖻>𝖳𝗁𝗂𝗌 𝖬𝗈𝖽𝗎𝗅𝖾 𝖧𝖾𝗅𝗉𝗌 𝖸𝗈𝗎 𝖳𝗈 𝖳𝗋𝖺𝗇𝗌𝗅𝖺𝗍𝖾 𝖠 𝖳𝖾𝗑𝗍 𝖳𝗈 𝖠𝗇𝗒 𝖮𝗍𝗁𝖾𝗋 𝖫𝖺𝗇𝗀𝗎𝖺𝗀𝖾𝗌 𝖸𝗈𝗎 𝖶𝖺𝗇𝗍</b>
+<b>𝖳𝗁𝗂𝗌 𝖬𝗈𝖽𝗎𝗅𝖾 𝖧𝖾𝗅𝗉𝗌 𝖸𝗈𝗎 𝖳𝗈 𝖳𝗋𝖺𝗇𝗌𝗅𝖺𝗍𝖾 𝖠 𝖳𝖾𝗑𝗍 𝖳𝗈 𝖠𝗇𝗒 𝖮𝗍𝗁𝖾𝗋 𝖫𝖺𝗇𝗀𝗎𝖺𝗀𝖾𝗌 𝖸𝗈𝗎 𝖶𝖺𝗇𝗍</b>
 
 <b>Commands and Usage:</b>
 » /tr - 𝖳𝗈 𝗍𝗋𝖺𝗇𝗌𝗅𝖺𝗍𝖾𝗋 𝗍𝖾𝗑𝗍𝗌 𝗍𝗈 𝖺 𝗌𝗉𝖾𝖼𝗂𝖿𝖼 𝗅𝖺𝗇𝗀𝗎𝖺𝗀𝖾
