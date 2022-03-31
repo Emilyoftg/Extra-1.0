@@ -6,7 +6,9 @@ from database.users_chats_db import db
 from database.ia_filterdb import Media
 from utils import get_size, temp
 from Script import script
+from info import PICS
 from pyrogram.errors import ChatAdminRequired
+import random
 
 """-----------------------------------------https://t.me/GetTGLink/4179 --------------------------------------"""
 
@@ -45,8 +47,8 @@ async def save_group(bot, message):
             ]
             ]
         reply_markup=InlineKeyboardMarkup(buttons)
-        await message.reply_text(
-            text=f"<b>𝖳𝗁𝖺𝗇𝗄𝗒𝗈𝗎 𝖥𝗈𝗋 𝖠𝖽𝖽𝗂𝗇𝗀 𝖬𝖾 𝖨𝗇 {message.chat.title}. \n 𝖨𝖿  𝖸𝗈𝗎  𝖧𝖺𝗏𝖾 𝖠𝗇𝗒 𝖰𝗎𝖾𝗌𝗍𝗂𝗈𝗇𝗌 & 𝖣𝗈𝗎𝖻𝗍𝗌 𝖠𝖻𝗈𝗎𝗍 𝖴𝗌𝗂𝗇𝗀 𝖬𝖾 𝖢𝗈𝗇𝗍𝖺𝖼𝗍 𝖮𝗐𝗇𝖾𝗋 </b>",
+        await message.reply_photo(photo=random.choice(PICS),
+            caption=f"<b>𝖳𝗁𝖺𝗇𝗄𝗒𝗈𝗎 𝖥𝗈𝗋 𝖠𝖽𝖽𝗂𝗇𝗀 𝖬𝖾 𝖨𝗇 {message.chat.title}. \n 𝖨𝖿  𝖸𝗈𝗎  𝖧𝖺𝗏𝖾 𝖠𝗇𝗒 𝖰𝗎𝖾𝗌𝗍𝗂𝗈𝗇𝗌 & 𝖣𝗈𝗎𝖻𝗍𝗌 𝖠𝖻𝗈𝗎𝗍 𝖴𝗌𝗂𝗇𝗀 𝖬𝖾 𝖢𝗈𝗇𝗍𝖺𝖼𝗍 𝖮𝗐𝗇𝖾𝗋 </b>",
             reply_markup=reply_markup)
     else:
         for u in message.new_chat_members:
@@ -55,7 +57,8 @@ async def save_group(bot, message):
                     await (temp.MELCOW['welcome']).delete()
                 except:
                     pass
-            temp.MELCOW['welcome'] = await message.reply(f"<b>𝖧𝖾𝗅𝗅𝗈 {u.mention}, 𝖶𝖾𝗅𝖼𝗈𝗆𝖾 𝖳𝗈 {message.chat.title}...!</b>")
+            temp.MELCOW['welcome'] = await message.reply_photo(photo=random.choice(PICS),
+            caption=f"<b>𝖧𝖾𝗅𝗅𝗈 {u.mention}, 𝖶𝖾𝗅𝖼𝗈𝗆𝖾 𝖳𝗈 {message.chat.title}.\n\n© Powered by <a href=https://t.me/MovieClubOfficiall'> Mᴏᴠɪᴇ Cʟᴜʙ Oғғɪᴄɪᴀʟ</a></b>")
 
 
 @Client.on_message(filters.command('leave') & filters.user(ADMINS))
