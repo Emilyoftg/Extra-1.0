@@ -40,7 +40,7 @@ async def save_group(bot, message):
             return
         buttons = [
             [
-                InlineKeyboardButton('⚠️ Hᴇʟᴘ ⚠️', url=f"https://t.me/{temp.U_NAME}?start=help")
+                InlineKeyboardButton('⚠️ Nᴇᴇᴅ Aɴʏ Hᴇʟᴘ ⚠️', url=f"https://t.me/{temp.U_NAME}?start=help")
             ],
             [
                 InlineKeyboardButton('⚙️ Bᴏᴛ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ⚙️', url='https://t.me/MCMovieBot')
