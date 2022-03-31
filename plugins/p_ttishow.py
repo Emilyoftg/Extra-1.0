@@ -22,11 +22,11 @@ async def save_group(bot, message):
         if message.chat.id in temp.BANNED_CHATS:
             # Inspired from a boat of a banana tree
             buttons = [[
-                InlineKeyboardButton('𝚂𝚄𝙿𝙿𝙾𝚁𝚃', url=f'https://t.me/{SUPPORT_CHAT}')
+                InlineKeyboardButton('🚸 Sᴜᴘᴘᴏʀᴛ 🚸', url=f'https://t.me/{SUPPORT_CHAT}')
             ]]
             reply_markup=InlineKeyboardMarkup(buttons)
             k = await message.reply(
-                text='<b>CHAT NOT ALLOWED 🐞\n\n𝙼𝚈 𝙰𝙳𝙼𝙸𝙽𝚂 𝙷𝙰𝚂 𝚁𝙴𝚂𝚃𝚁𝙸𝙲𝚃𝙴𝙳 𝙼𝙴 𝙵𝚁𝙾𝙼 𝚆𝙾𝚁𝙺𝙸𝙽𝙶 𝙷𝙴𝚁𝙴 !𝙸𝙵 𝚈𝙾𝚄 𝚆𝙰𝙽𝚃 𝚃𝙾 𝙺𝙽𝙾𝚆 𝙼𝙾𝚁𝙴 𝙰𝙱𝙾𝚄𝚃 𝙸𝚃 𝙲𝙾𝙽𝚃𝙰𝙲𝚃 𝙾𝚆𝙽𝙴𝚁...</b>',
+                text='<b>𝖢𝖧𝖠𝖳 𝖭𝖮𝖳 𝖠𝖫𝖫𝖮𝖶𝖤𝖣 🐞\n\n𝖬𝖸 𝖠𝖣𝖬𝖨𝖭𝖲 𝖧𝖠𝖲 𝖱𝖤𝖲𝖳𝖱𝖨𝖢𝖳𝖤𝖣 𝖬𝖤 𝖥𝖱𝖮𝖬 𝖶𝖮𝖱𝖪𝖨𝖭𝖦 𝖧𝖤𝖱𝖤! 𝖨𝖥 𝖸𝖮𝖴 𝖶𝖠𝖭𝖳 𝖳𝖮 𝖪𝖭𝖮𝖶 𝖬𝖮𝖱𝖤 𝖠𝖡𝖮𝖴𝖳 𝖨𝖳 𝖢𝖮𝖭𝖳𝖠𝖢𝖳 𝖮𝖶𝖭𝖤𝖱...</b>',
                 reply_markup=reply_markup,
             )
 
@@ -41,7 +41,7 @@ async def save_group(bot, message):
                 InlineKeyboardButton('⚠️ Hᴇʟᴘ ⚠️', url=f"https://t.me/{temp.U_NAME}?start=help")
             ],
             [
-                InlineKeyboardButton('⚙️ Bᴏᴛ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ⚠️', url='https://t.me/MCMovieBot')
+                InlineKeyboardButton('⚙️ Bᴏᴛ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ⚙️', url='https://t.me/MCMovieBot')
             ]
             ]
         reply_markup=InlineKeyboardMarkup(buttons)
