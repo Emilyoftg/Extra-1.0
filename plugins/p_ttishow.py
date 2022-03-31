@@ -48,8 +48,11 @@ async def save_group(bot, message):
             ]
         reply_markup=InlineKeyboardMarkup(buttons)
         await message.reply_photo(photo=random.choice(PICS),
-            caption=f"<b>𝖳𝗁𝖺𝗇𝗄𝗒𝗈𝗎 𝖥𝗈𝗋 𝖠𝖽𝖽𝗂𝗇𝗀 𝖬𝖾 𝖨𝗇 {message.chat.title}. \n 𝖨𝖿  𝖸𝗈𝗎  𝖧𝖺𝗏𝖾 𝖠𝗇𝗒 𝖰𝗎𝖾𝗌𝗍𝗂𝗈𝗇𝗌 & 𝖣𝗈𝗎𝖻𝗍𝗌 𝖠𝖻𝗈𝗎𝗍 𝖴𝗌𝗂𝗇𝗀 𝖬𝖾 𝖢𝗈𝗇𝗍𝖺𝖼𝗍 𝖮𝗐𝗇𝖾𝗋 </b>",
+            mek=f"<b>𝖳𝗁𝖺𝗇𝗄𝗒𝗈𝗎 𝖥𝗈𝗋 𝖠𝖽𝖽𝗂𝗇𝗀 𝖬𝖾 𝖨𝗇 {message.chat.title}. \n 𝖨𝖿  𝖸𝗈𝗎  𝖧𝖺𝗏𝖾 𝖠𝗇𝗒 𝖰𝗎𝖾𝗌𝗍𝗂𝗈𝗇𝗌 & 𝖣𝗈𝗎𝖻𝗍𝗌 𝖠𝖻𝗈𝗎𝗍 𝖴𝗌𝗂𝗇𝗀 𝖬𝖾 𝖢𝗈𝗇𝗍𝖺𝖼𝗍 𝖮𝗐𝗇𝖾𝗋 </b>",
             reply_markup=reply_markup)
+        await asyncio.sleep(10)
+        await mek.delete()
+        await msg.delete() 
     else:
         for u in message.new_chat_members:
             if (temp.MELCOW).get('welcome') is not None:
