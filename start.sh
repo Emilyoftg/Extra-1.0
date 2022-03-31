@@ -6,7 +6,7 @@ else
   echo "Cloning Custom Repo from $UPSTREAM_REPO "
   git clone $UPSTREAM_REPO /Extra-1.0
 fi
-cd /Ajax
+cd /Extra-1.0
 pip3 install -U -r requirements.txt
 echo "Starting Nathalia....🔥"
 python3 bot.py
