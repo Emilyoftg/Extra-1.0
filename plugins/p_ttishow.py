@@ -58,7 +58,7 @@ async def save_group(bot, message):
                 except:
                     pass
             temp.MELCOW['welcome'] = await message.reply_photo(photo=random.choice(PICS),
-            caption=f"<b>𝖧𝖾𝗅𝗅𝗈 {u.mention}, 𝖶𝖾𝗅𝖼𝗈𝗆𝖾 𝖳𝗈 {message.chat.title}.\n\n© Powered by <a href=https://t.me/MovieClubOfficiall> Tᴇᴀᴍ ᴏᴠɪᴇ Cʟᴜʙ </a></b>")
+            caption=f"<b>𝖧𝖾𝗅𝗅𝗈 {u.mention}, 𝖶𝖾𝗅𝖼𝗈𝗆𝖾 𝖳𝗈 {message.chat.title}.\n\n© Powered by <a href=https://t.me/MovieClubOfficiall> Tᴇᴀᴍ Mᴏᴠɪᴇ Cʟᴜʙ </a></b>")
 
 
 @Client.on_message(filters.command('leave') & filters.user(ADMINS))
