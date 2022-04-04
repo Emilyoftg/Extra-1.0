@@ -24,26 +24,26 @@ async def allowed(_, __, message):
 async def gen_link_s(bot, message):
     replied = message.reply_to_message
     if not replied:
-        return await message.reply('𝚁𝙴𝙿𝙻𝚈 𝚃𝙾 𝙰 𝙼𝙴𝚂𝚂𝙰𝙶𝙴 𝙾𝚁 𝙰 𝙵𝙸𝙻𝙴. 𝙸 𝚆𝙸𝙻𝙻 𝙶𝙸𝚅𝙴 𝚈𝙾𝚄 𝙰 𝚂𝙷𝙰𝚁𝙰𝙱𝙻𝙴 𝙿𝙴𝚁𝙼𝙰𝙽𝙴𝙽𝚃 𝙻𝙸𝙽𝙺')
+        return await message.reply('**𝖱𝖾𝗉𝗅𝗒 𝖳𝗈 𝖠 𝖬𝖾𝗌𝗌𝖺𝗀𝖾 𝖮𝖱 𝖠 𝖥𝗂𝗅𝖾. 𝖨 𝖶𝗂𝗅𝗅 𝖦𝗂𝗏𝖾 𝖸𝗈𝗎 𝖠 𝖲𝗁𝖺𝗋𝖺𝖻𝗅𝖾 𝖯𝖾𝗋𝗆𝖺𝗇𝖾𝗇𝗍 𝖫𝗂𝗇𝗄**')
     file_type = replied.media
     if file_type not in ["video", 'audio', 'document']:
-        return await message.reply("𝚁𝙴𝙿𝙻𝚈 𝚃𝙾 𝙰 𝚂𝚄𝙿𝙿𝙾𝚁𝚃𝙴𝙳 𝙼𝙴𝙳𝙸𝙰")
+        return await message.reply("𝖱𝖾𝗉𝗅𝗒 𝖳𝗈 𝖠 𝖲𝗎𝗉𝗉𝗈𝗋𝗍𝖾𝖽 𝖬𝖾𝖽𝗂𝖺")
     if message.has_protected_content and message.chat.id not in ADMINS:
-        return await message.reply("𝙾𝙺 𝙱𝚁𝙾")
+        return await message.reply("𝖳𝗁𝗂𝗌 𝖨𝗌 𝖭𝗈𝗍 𝖥𝗈𝗋 𝖸𝗈𝗎 😒")
     file_id, ref = unpack_new_file_id((getattr(replied, file_type)).file_id)
     string = 'filep_' if message.text.lower().strip() == "/plink" else 'file_'
     string += file_id
     outstr = base64.urlsafe_b64encode(string.encode("ascii")).decode().strip("=")
-    await message.reply(f"<b>⪼ 𝙷𝙴𝚁𝙴 𝙸𝚂 𝚈𝙾𝚄𝚁 𝙻𝙸𝙽𝙺:</b>\n\nhttps://t.me/{temp.U_NAME}?start={outstr}")
+    await message.reply(f"<b>𝖧𝖾𝗋𝖾 𝖨𝗌 𝖸𝗈𝗎𝗋 𝖫𝗂𝗇𝗄:</b>\n\nhttps://t.me/{temp.U_NAME}?start={outstr}")
     
     
 @Client.on_message(filters.command(['batch', 'pbatch']) & filters.create(allowed))
 async def gen_link_batch(bot, message):
     if " " not in message.text:
-        return await message.reply("𝚄𝚂𝙴 𝙲𝙾𝚁𝚁𝙴𝙲𝚃 𝙵𝙾𝚁𝙼𝙰𝚃.\n𝙴𝚇𝙰𝙼𝙿𝙻𝙴 ›› <code>/batch https://t.me/MWUpdatez/3 https://t.me/MWUpdatez/8</code>.")
+        return await message.reply("<b>𝖯𝗅𝖾𝖺𝗌𝖾 𝖥𝗈𝗋𝗐𝖺𝗋𝖽 𝖳𝗁𝖾 𝖥𝗋𝗂𝗌𝗍 𝖯𝗈𝗌𝗍 𝖥𝗋𝗈𝗆 𝖳𝗁𝖾 𝖢𝗁𝖺𝗇𝗇𝖾𝗅 (𝖶𝗁𝖾𝗋𝖾 𝖨 𝖠𝗆 𝖠 𝖠𝖽𝗆𝗂𝗇)\n\n𝖴𝗌𝖾 𝖢𝗈𝗋𝗋𝖾𝖼𝗍 𝖥𝗈𝗋𝗆𝖺𝗍.</b>\n\n𝖤𝗑𝖺𝗆𝗉𝗅𝖾 : <code>/batch https://t.me/MovieClubOfficiall/7 https://t.me/MovieClubOfficiall/10</code>.")
     links = message.text.strip().split(" ")
     if len(links) != 3:
-        return await message.reply("Use correct format.\nExample <code>/batch https://t.me/MWUpdatez/3 https://t.me/MWUpdatez/8</code>.")
+        return await message.reply("<b>𝖯𝗅𝖾𝖺𝗌𝖾 𝖥𝗈𝗋𝗐𝖺𝗋𝖽 𝖳𝗁𝖾 𝖥𝗋𝗂𝗌𝗍 𝖯𝗈𝗌𝗍 𝖥𝗋𝗈𝗆 𝖳𝗁𝖾 𝖢𝗁𝖺𝗇𝗇𝖾𝗅 (𝖶𝗁𝖾𝗋𝖾 𝖨 𝖠𝗆 𝖠 𝖠𝖽𝗆𝗂𝗇) 𝖴𝗌𝖾 𝖢𝗈𝗋𝗋𝖾𝖼𝗍 𝖥𝗈𝗋𝗆𝖺𝗍.</b>\n\n𝖤𝗑𝖺𝗆𝗉𝗅𝖾 : <code>/batch https://t.me/MovieClubOfficiall/7 https://t.me/MovieClubOfficiall/10</code>.")
     cmd, first, last = links
     regex = re.compile("(https://)?(t\.me/|telegram\.me/|telegram\.dog/)(c/)?(\d+|[a-zA-Z_0-9]+)/(\d+)$")
     match = regex.match(first)
@@ -63,23 +63,23 @@ async def gen_link_batch(bot, message):
         l_chat_id  = int(("-100" + l_chat_id))
 
     if f_chat_id != l_chat_id:
-        return await message.reply("Chat ids not matched.")
+        return await message.reply("𝖢𝗁𝖺𝗍 𝖨𝖣 𝖭𝗈𝗍 𝖬𝖺𝗍𝖼𝗁𝖾𝖽 🧐")
     try:
         chat_id = (await bot.get_chat(f_chat_id)).id
     except ChannelInvalid:
-        return await message.reply('𝚃𝙷𝙸𝚂 𝙼𝙰𝚈 𝙱𝙴 𝙰 𝙿𝚁𝙸𝚅𝙰𝚃𝙴 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 / 𝙶𝚁𝙾𝚄𝙿. 𝙼𝙰𝙺𝙴 𝙼𝙴 𝙰𝙽 𝙰𝙳𝙼𝙸𝙽 𝙾𝚅𝙴𝚁 𝚃𝙷𝙴𝚁𝙴 𝚃𝙾 𝙸𝙽𝙳𝙴𝚇 𝚃𝙷𝙴 𝙵𝙸𝙻𝙴𝚂.')
+        return await message.reply('𝖳𝗁𝗂𝗌 𝖬𝖺𝗒 𝖡𝖾 𝖠 𝖯𝗋𝗂𝗏𝖺𝗍𝖾 𝖢𝗁𝖺𝗇𝗇𝖾𝗅 𝖮𝖱 𝖦𝗋𝗈𝗎𝗉. 𝖬𝖺𝗄𝖾 𝖬𝖾 𝖠𝗇 𝖠𝖽𝗆𝗂𝗇 𝖮𝗏𝖾𝗋 𝖳𝗁𝖾𝗋𝖾 𝖳𝗈 𝖨𝗇𝖽𝖾𝗑 𝖳𝗁𝖾 𝖥𝗂𝗅𝖾𝗌 📁.')
     except (UsernameInvalid, UsernameNotModified):
-        return await message.reply('Invalid Link specified.')
+        return await message.reply('𝖨𝗇𝗏𝖺𝗅𝗂𝖽 𝖫𝗂𝗇𝗄 𝖲𝗉𝖾𝖼𝗂𝖿𝗂𝖾𝖽 🤕.')
     except Exception as e:
         return await message.reply(f'Errors - {e}')
 
-    sts = await message.reply("𝙶𝚎𝚗𝚎𝚛𝚊𝚝𝚒𝚗𝚐 𝙻𝚒𝚗𝚔 𝙵𝚘𝚛 𝚈𝚘𝚞𝚛 𝙼𝚎𝚜𝚜𝚊𝚐𝚎.\n𝚃𝙷𝙸𝚂 𝙼𝙰𝚈𝙱𝙴 𝚃𝙰𝙺𝙴 𝚃𝙸𝙼𝙴 𝙳𝙴𝙿𝙴𝙽𝙳𝙸𝙽𝙶 𝚄𝙿𝙾𝙽 𝚃𝙷𝙴 𝙽𝚄𝙼𝙱𝙴𝚁 𝙾𝙵 𝙼𝙴𝚂𝚂𝙰𝙶𝙴𝚂")
+    sts = await message.reply("𝖦𝖾𝗇𝖾𝗋𝖺𝗍𝗂𝗇𝗀 𝖫𝗂𝗇𝗄 𝖥𝗈𝗋 𝖸𝗈𝗎𝗋 𝖬𝖾𝗌𝗌𝖺𝗀𝖾.\n𝖳𝗁𝗂𝗌 𝖬𝖺𝗒𝖡𝖾 𝖳𝖺𝗄𝖾 𝖳𝗂𝗆𝖾 𝖣𝖾𝗉𝖾𝗇𝖽𝗂𝗇𝗀 𝖴𝗉𝗈𝗇 𝖳𝗁𝖾 𝖭𝗎𝗆𝖻𝖾𝗋 𝖮𝖿 𝖬𝖾𝗌𝗌𝖺𝗀𝖾𝗌")
     if chat_id in FILE_STORE_CHANNEL:
         string = f"{f_msg_id}_{l_msg_id}_{chat_id}_{cmd.lower().strip()}"
         b_64 = base64.urlsafe_b64encode(string.encode("ascii")).decode().strip("=")
-        return await sts.edit(f"<b>⪼ 𝙷𝙴𝚁𝙴 𝙸𝚂 𝚈𝙾𝚄𝚁 𝙻𝙸𝙽𝙺 ››  https://t.me/{temp.U_NAME}?start=DSTORE-{b_64}</b>")
+        return await sts.edit(f"<b>𝖧𝖾𝗋𝖾 𝖨𝗌 𝖸𝗈𝗎𝗋 𝖫𝗂𝗇𝗄:</b>\n\nhttps://t.me/{temp.U_NAME}?start=DSTORE-{b_64}")
 
-    FRMT = "<b>╭━━━━━━━━━━━━━━━➣\n┣⪼𝙶𝙴𝙽𝙴𝚁𝙰𝚃𝙸𝙽𝙶 𝙻𝙸𝙽𝙺...\n┣⪼𝚃𝙾𝚃𝙰𝙻 𝙼𝙴𝚂𝚂𝙰𝙶𝙴𝚂: `{total}`\n┣⪼𝙳𝙾𝙽𝙴: `{current}`\n┣⪼𝚁𝙴𝙼𝙰𝙸𝙽𝙸𝙽𝙶: `{rem}`\n┣⪼𝚂𝚃𝙰𝚃𝚄𝚂: `{sts}`\n╰━━━━━━━━━━━━━━━➣</b>"
+    FRMT = "<b>╭━━━━━━━━━━━━━━━➣\n┣⪼𝖦𝖾𝗇𝖾𝗋𝖺𝗍𝗂𝗇𝗀 𝖫𝗂𝗇𝗄 ⏳\n┣⪼𝖳𝗈𝗍𝖺𝗅 𝖬𝖾𝗌𝗌𝖺𝗀𝖾𝗌 📜: `{total}` \n┣⪼𝖣𝗈𝗇𝖾 🗳️: `{current}`\n┣⪼𝖱𝖾𝗆𝖺𝗂𝗇𝗂𝗇𝗀 📤: `{rem}`\n┣⪼𝖲𝗍𝖺𝗍𝗎𝗌 💬: `{sts}`\n╰━━━━━━━━━━━━━━━➣</b>"
 
     outlist = []
 
@@ -122,4 +122,4 @@ async def gen_link_batch(bot, message):
     post = await bot.send_document(LOG_CHANNEL, f"batchmode_{message.from_user.id}.json", file_name="Batch.json", caption="👩🏻‍💻 File Store Logs 👩🏻‍💻")
     os.remove(f"batchmode_{message.from_user.id}.json")
     file_id, ref = unpack_new_file_id(post.document.file_id)
-    await sts.edit(f"<b>⪼ 𝙷𝙴𝚁𝙴 𝙸𝚂 𝚈𝙾𝚄𝚁 𝙻𝙸𝙽𝙺\n𝙲𝙾𝙽𝚃𝙰𝙸𝙽𝚂 `{og_msg}` 𝙵𝙸𝙻𝙴𝚂.</b>\n\n<b>›› https://t.me/{temp.U_NAME}?start=BATCH-{file_id}</b>")
+    await sts.edit(f"<b>𝖧𝖾𝗋𝖾 𝖨𝗌 𝖸𝗈𝗎𝗋 𝖫𝗂𝗇𝗄\n𝖢𝗈𝗇𝗍𝖺𝗂𝗇𝗌</b><b> `{og_msg}` 𝖥𝗂𝗅𝖾𝗌.</b>\n\n<b>›› https://t.me/{temp.U_NAME}?start=BATCH-{file_id}</b>")
